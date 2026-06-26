@@ -1,5 +1,4 @@
-const pool = require("../db");
-
+const pool = require("../../db");
 exports.getProducts = async (req, res) => {
   try {
     const limit = parseInt(req.query.limit) || 20;
